@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(233, 233, 233);
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: right;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+
+        .navbar a:hover,
+        .dropdown2:hover .dropbtn2 {
+            background-color: grey;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: beige;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown2 {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown2 .dropbtn2 {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropbtn2 {
+            background-color: rgb(117, 106, 58);
+        }
+
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: beige;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content2 a {
+            float: none;
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content2 a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+
+
+
+
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: scroll;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link and background color on hover */
+        li a:hover {
+            background-color: #555555;
+            color: white;
+        }
+
+        li a.active {
+            background-color: #94d3bc;
+            color: rgba(101, 113, 221, 0.726);
+
+        }
+
+
+        input[type="text"] {
+            background-color: darkgray;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: darkgray;
+            color: rgb(0, 0, 0);
+            padding: 14px 20px;
+            margin: 8px 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="dropdown2">
+            <button class="dropbtn2">More Options
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+                <a href="#">option 1</a>
+                <a href="#">option 2</a>
+                <a href="#">option 3</a>
+            </div>
+        </div>
+        <a href="#news">Share</a>
+        <div class="dropdown">
+            <button class="dropbtn">ChatGPT
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Model 1</a>
+                <a href="#">Model 2</a>
+                <a href="#">Model 3</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <ul>
+        <li><a href="#home">New Chat</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#about">sora</a></li>
+        <li><a href="#home">GPTs</a></li>
+        <li><a href="#news">Three.js Mentor</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li style="font-size:30px; color:rgb(139, 106, 106);text-align: center;">Old Chats</li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#about">sora</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#about">sora</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+        <li><a href="#contact">Consensus</a></li>
+        <li><a href="#about">New Project</a></li>
+        <li><a href="#home">Homework</a></li>
+        <li><a href="#news">Search Chats</a></li>
+        <li><a href="#contact">Library</a></li>
+    </ul>
+<!-- 
+    <form>
+        <div style="border: 1px solid black; left:50%; position:absolute; bottom:5%;">
+            <input type="text" placeholder="Ask Anything...">
+            <input type="submit" value="SUBMIT">
+
+        </div>
+
+    </form> -->
+
+
+
+
+
+    <form>
+        <div style="border: 1px solid black; left:50%; position:absolute; bottom:5%;">
+            <input type="text" placeholder="Type a message" id="message">
+            <div>
+                <button id="button-addon2" type="submit" class="btn btn-link" onclick="addText()"> SUBMIT <i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
